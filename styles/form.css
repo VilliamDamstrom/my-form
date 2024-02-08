@@ -1,7 +1,7 @@
 body {
     display: flex;
-    margin-top: 150px;
-    
+    max-width: 1400px;
+    width: 100%;
 }
 
 .screen {
@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(..images/gym.jpg);
+    background-image: url(../images/gym.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,12 +19,23 @@ body {
 
 .form {
     box-sizing: border-box;
-    max-width: 700px;
+    max-width: 500px;
     width: 100%;
-    min-height: 700px;
+    min-height: 800px;
     padding: 20px 20px;
     background-color: rgb(131, 130, 155);
     border-radius: 5px;
     box-shadow: 3px 3px 8px #151414;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     
+}
+
+h1 {
+    align-self: center;
+}
+
+h2 {
+    align-self: center;
 }
