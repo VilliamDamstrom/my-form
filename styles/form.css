@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    margin-top: 150px;
+    
+}
+
+.screen {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(..images/gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.form {
+    box-sizing: border-box;
+    max-width: 700px;
+    width: 100%;
+    min-height: 700px;
+    padding: 20px 20px;
+    background-color: rgb(131, 130, 155);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px #151414;
+    
+}
