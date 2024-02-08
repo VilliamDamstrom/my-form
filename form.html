@@ -13,8 +13,8 @@
 <body>
     <main class="screen">
         <form class="form" autocomplete="off">
-            <h1>Membership Application</h1>
-            <h2>Would you like to become a member at our gym? 
+            <h1 class="title">Membership Application</h1>
+            <h2 class="under-title">Would you like to become a member at our gym? 
                 Please fill out the form below!</h2>
 
                 <label for="name">Full Name</label>
@@ -23,14 +23,14 @@
                 <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email">
                 <label for="password" class="label">New Password</label>
                 <input type="password" name="password" id="password" class="input-field" placeholder="Enter new password">
-
+                <div class="select-wrapper">
                 <label for="select" class="label">What type of membership do you want to sign up for? </label>
                 <select name="memberships" id="select">
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
                     <option value="platinum">Platinum Membership</option>
                 </select>
-
+                </div>
         </form>
     </main>
     

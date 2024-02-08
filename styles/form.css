@@ -4,6 +4,14 @@ body {
     width: 100%;
 }
 
+.title, .under-title {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: #333a3b;
+
+
+}
+
 .screen {
     width: 100%;
     padding: 20px 20px;
@@ -23,19 +31,11 @@ body {
     width: 100%;
     min-height: 800px;
     padding: 20px 20px;
-    background-color: rgb(131, 130, 155);
+    background-color: rgb(118, 61, 85);
     border-radius: 5px;
     box-shadow: 3px 3px 8px #151414;
     display: flex;
     flex-direction: column;
     gap: 10px;
     
-}
-
-h1 {
-    align-self: center;
-}
-
-h2 {
-    align-self: center;
 }
