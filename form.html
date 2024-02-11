@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/normalize.css">
     <link rel="stylesheet" href="styles/form.css">
     <title>Membership Application Form</title>
 </head>
@@ -16,13 +17,12 @@
             <h1 class="title">Membership Application</h1>
             <h2 class="under-title">Would you like to become a member at our gym? 
                 Please fill out the form below!</h2>
-
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name">
+                <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required minlength="3">
                 <label for="email">Email Adress</label>
-                <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email">
+                <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required minlength="3">
                 <label for="password" class="label">New Password</label>
-                <input type="password" name="password" id="password" class="input-field" placeholder="Enter new password">
+                <input type="password" name="password" id="password" class="input-field" placeholder="Enter new password" required minlength="8">
                 <div class="select-wrapper">
                 <label for="select" class="label">What type of membership do you want to sign up for? </label>
                 <select name="memberships" id="select">
@@ -31,6 +31,36 @@
                     <option value="platinum">Platinum Membership</option>
                 </select>
                 </div>
+                <div class="container-box">
+                    <div class="container first">
+                        <div class="box first">
+                            <h4>Silver Membership</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem officiis doloribus tenetur voluptate tempore, 
+                                odio laudantium doloremque fugiat sunt, id sint quo voluptatum eius maiores unde dolorem quaerat aliquid. Explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="container second">
+                        <div class="box second">
+                            <h4>Gold Membership</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore, 
+                                magnam odio iure accusantium quia quae itaque omnis perferendis, quis repudiandae, suscipit illum velit officiis quisquam expedita iusto totam facere?</p>
+                        </div>
+                    </div>
+                    <div class="container third">
+                        <div class="box third">
+                            <h4>Platinum Membership</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                                 officiis itaque temporibus reiciendis dolor nostrum beatae enim saepe voluptatum, cum est ipsa vel libero praesentium eos? Numquam vel soluta officiis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        <div class="input-title">I'd like to receive information about our gym on my email!</div>
+                    </label>
+                </div>
+                <button type="submit" class="button">Submit</button>
         </form>
     </main>
     

@@ -8,8 +8,6 @@ body {
     text-align: center;
     font-family: 'Nunito', sans-serif;
     background-color: #333a3b;
-
-
 }
 
 .screen {
@@ -22,7 +20,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    border-color: #333a3b;
+    border: 3px;
 }
 
 .form {
@@ -38,4 +37,71 @@ body {
     flex-direction: column;
     gap: 10px;
     
+}
+
+.select, .input-field {
+    box-sizing: border-box;
+    padding: 10px 10px;
+    background-color: #333a3b;
+    font-family: 'Nunito', sans-serif;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#select {
+    height: 35px;
+    -webkit-appearance: none;
+    border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	cursor: pointer;
+    background-color: #333a3b;
+}
+
+.input-field:hover, textarea:hover, select:hover, .button:hover {
+    background-color: rgb(195, 124, 154);
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+ 
+}
+
+.container.first, container.second, .container.third {
+    display: flex;
+    padding: 3px 3px;
+  
+}
+
+.checkbox-container {
+    display: flex;
+    padding: 10px;
+    align-self: center;
+}
+
+.checkbox-label {
+    display: flex;
+    gap: 3px;
+	cursor: pointer;
+	font-size: 16px;
+    padding: 10px;
+}
+
+button {
+    box-sizing: border-box;
+    width: 80%;
+    height: 35px;
+    margin-top: 50px;
+    background-color: #333a3b;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    align-self: center;
 }
